@@ -1,0 +1,512 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.header {
+  /* overflow: hidden; */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+  background: #fff; 
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 10px 100px;
+}
+
+.header-logo {
+  padding-top: 10px;
+}
+
+.header-nav-link {
+  padding-right: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #363636;
+  text-transform: uppercase;
+  transition: opacity 0.2s linear;
+}
+
+.header-nav-link:hover {
+  color: #0078aa;
+  opacity: 0.7; 
+}
+
+.contentImg {
+  background-image: url(../img/lady.jpg);
+  background-size: cover;
+  max-width: 100%;
+  /* width: auto; */
+  height: 600px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.contentTitle {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 80px;
+  max-width: 540px;
+}
+
+.titleBig {
+  font-size: 38px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+.titlesmall {
+  opacity: 0.5;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.btn-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #0078aa;
+  border: none;
+  border-radius: 50%;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.btn-icon svg {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
+.btn-icon:hover {
+  color: #789aa8;
+  opacity: 0.5;
+}
+
+.topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+
+  width: 50px;
+  height: 50px;
+  background-color: #36b1c4;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.topBtn svg{
+  transform: rotate(-90deg); 
+  fill: white;
+}
+
+.topBtn:hover {
+  background-color:  #1a8899;
+}
+
+.mainContent {
+  display: flex;
+}
+
+.contactBg {
+  width: 50%;
+}
+
+.contentBg img {
+  max-width: 100%;
+  height: auto;
+  padding-left: 40px;
+}
+
+.contentAbout {
+  max-width: 100%;
+  width: 50%;
+  align-self: center;
+  padding: 30px 110px 20px 70px;
+}
+
+.titleAbout {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.titleAbout span {
+  text-transform: uppercase;
+  color: rgb(48, 152, 207);
+  font-weight: normal;
+}
+
+.contentAbout p {
+  font-size: 14px;
+}
+
+.contentAbout p span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contentTwo {
+  background-image: url(../img/services_bg.jpg);
+  background-size: cover;
+}
+
+.serviceTitle {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  padding-top: 20px;
+}
+
+.serviceTitle span {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.blockService {
+  display: grid;
+  padding: 30px 50px 30px;
+  justify-content: center;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 200px; 
+  column-gap: 10px;
+  row-gap: 15px;
+} 
+
+.oneBlock {
+  background-color: #fff;
+  position: relative;
+}
+
+.blockText {
+  position: absolute;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+}
+
+.blockText span {
+  font-weight: 700;
+}
+
+.oneBlock-img {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.svg-inline--fa {
+  color: rgb(12, 11, 11);
+  opacity: 0.8;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 55px;
+  left: 12px;
+}
+
+svg.svg-big {
+  color: #d8fbf5;
+  width: 70px;
+  height: 70px;
+}
+
+
+.pricingBlock {
+  background-image: url(../img/pricing_bg.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.pricingTitle {
+  padding-top: 50px;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  top: 50px;
+  left: 50px;
+}
+
+.pricingBlock span {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.price {
+  font-size: 44px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.allergyBlock {
+  width: 300px;
+  height: 420px;
+  background-color: rgb(64, 212, 235);
+  text-align: center;
+  color: white;
+}
+
+.EyeBlock {
+  width: 300px;
+  height: 470px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(50, 160, 207);
+  text-align: center;
+  color: rgb(41, 138, 180);
+  box-shadow: inset -1px -1px;
+}
+
+.dentalBlock {
+  width: 300px;
+  height: 420px;
+  background-color: rgb(64, 212, 235);
+  text-align: center;
+  color: white;
+}
+
+.pricingThreeBlocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pricingThreeBlocks-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 30px 0px 10px 0px;
+}
+
+.EyeBlock .pricingThreeBlocks-title {
+  margin-top: 54px;
+}
+
+.pricingBlock-btn {
+  border: 2px solid rgb(41, 138, 180);
+  border-radius: 8px;
+  background-color: white;
+  color:  rgb(41, 138, 180);
+  font-weight: bold;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.pricingBlock-btn:hover {
+  background-color: rgb(212, 238, 248);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.contactBlock {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  max-width: 100%;
+  width: 50%;
+  align-self: center;
+  padding: 30px 20px 10px 20px;
+}
+
+.form input {
+  width: 95%;
+  margin: 15px;
+  border: none;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+.form button {
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(55, 125, 199);
+  color: white;
+}
+
+.form button:hover {
+  background-color: rgb(18, 97, 182);
+  cursor: pointer;
+}
+
+.contactBlock img {
+  max-width: 100%;
+  width: 50%;
+}
+
+.contactTitle {
+  font-size: 22px;
+  font-weight: 800;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.contactTitle span {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* Media
+================*/
+
+@media (min-width: 768px) and (max-width: 1279px) {
+ 
+  .blockService {
+    display: grid;
+    padding: 30px 50px 30px;
+
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 270px 270px; 
+    column-gap: 10px;
+    row-gap: 15px;
+  } 
+
+  .contentAbout {
+    text-align: left;
+    width: 85%;
+    padding: 20px 10px 20px 50px;
+  }
+
+  .blockText {
+    padding: 70px 10px 15px 10px;
+  }
+
+  .contactBlock img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 767px) { 
+
+  .header-inner {
+    padding: 0 0;
+    flex-direction: column;
+  }
+
+  .header-logo {
+    margin-bottom: 10px;
+  }
+
+  .contentTitle {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+
+  .contentImg {
+    height: 450px;
+  }
+
+  .contentBg img {
+    padding: 0px;
+  }
+
+  .buttons-icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contentAbout {
+    text-align: center;
+    width: 85%;
+    align-self: center;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .blockService {
+    display: grid;
+    padding: 10px 10px 10px;
+    justify-content: center;
+    grid-template-columns: 300px;
+    grid-template-rows: 170px 170px 170px 170px 170px 170px; 
+    column-gap: 10px;
+    row-gap: 15px;
+  } 
+
+  .blockText {
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+
+  .pricingThreeBlocks {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .pricingBlock {
+    background-image: none;
+  }
+
+  .EyeBlock {
+    width: 300px;
+    height: 420px;
+    margin: 10px;
+  }
+
+  .EyeBlock .pricingThreeBlocks-title {
+    margin-top: 30px;
+  }
+
+  .contactBlock {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contactTitle {
+    text-align: center;
+  }
+
+  .form button {
+    margin: 0 44%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .contactBlock img {
+    width: 100%;
+  }
+
+}
