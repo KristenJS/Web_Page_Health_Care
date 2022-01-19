@@ -439,6 +439,10 @@ input::placeholder {
     justify-content: space-evenly;
   }
 
+  .btn-icon {
+  margin-right: 0px;
+  }
+  
   .contentAbout {
     text-align: center;
     width: 85%;
