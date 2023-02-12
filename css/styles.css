@@ -8,6 +8,11 @@ body {
   font-size: 14px;
 }
 
+.anchor {
+  position: absolute;
+  margin-top: -60px;
+}
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -73,13 +78,13 @@ body {
 .titleBig {
   font-size: 38px;
   font-weight: 800;
-  padding-bottom: 10px
+  padding-bottom: 20px;
 }
 
 .titlesmall {
   opacity: 0.5;
   padding-bottom: 10px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .btn-icon {
@@ -89,18 +94,12 @@ body {
   border: none;
   border-radius: 50%;
   margin-right: 30px;
-  cursor: pointer;
 }
 
 .btn-icon svg {
   width: 25px;
   height: 25px;
   color: white;
-}
-
-.btn-icon:hover {
-  color: #789aa8;
-  opacity: 0.5;
 }
 
 .topBtn {
@@ -160,11 +159,11 @@ body {
 }
 
 .contentAbout p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .contentAbout p span {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -206,11 +205,12 @@ body {
   padding-top: 25px;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .blockText span {
   font-weight: 700;
+  font-size: 16px;
 }
 
 .oneBlock-img {
@@ -332,14 +332,15 @@ svg.svg-big {
   max-width: 100%;
   width: 50%;
   align-self: center;
-  padding: 30px 20px 10px 20px;
+  padding: 30px 50px 10px 50px;
 }
 
 .form input {
   width: 95%;
-  margin: 15px;
+  margin: 15px 3px;
   border: none;
   border-bottom: 1px solid rgb(214, 214, 214);
+  outline: none;
 }
 
 input::placeholder {
@@ -347,7 +348,7 @@ input::placeholder {
 }
 
 .form button {
-  margin: 10px;
+  margin: 10px 3px;
   padding: 10px 15px;
   border-radius: 10px;
   border: none;
@@ -409,11 +410,16 @@ input::placeholder {
   }
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 
   .header-inner {
     padding: 0 0;
     flex-direction: column;
+    text-align: center;
+  }
+
+  .header-nav-link span {
+    padding-top: 10px
   }
 
   .header-logo {
@@ -423,7 +429,7 @@ input::placeholder {
   .contentTitle {
     text-align: center;
     margin-left: 0px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
 
   .contentImg {
@@ -440,9 +446,9 @@ input::placeholder {
   }
 
   .btn-icon {
-  margin-right: 0px;
+    margin-right: 0px;
   }
-  
+
   .contentAbout {
     text-align: center;
     width: 85%;
@@ -459,10 +465,10 @@ input::placeholder {
     padding: 10px 10px 10px;
     justify-content: center;
     grid-template-columns: 300px;
-    grid-template-rows: 170px 170px 170px 170px 170px 170px; 
+    grid-template-rows: 170px 170px 170px 170px 170px 170px;
     column-gap: 10px;
     row-gap: 15px;
-  } 
+  }
 
   .blockText {
     position: absolute;
@@ -501,12 +507,12 @@ input::placeholder {
     text-align: center;
   }
 
-  .form button {
-    margin: 0 44%;
-  }
-
   .form {
     width: 100%;
+  }
+
+  .form_inputs {
+    padding: 0 50px;
   }
 
   .contactBlock img {
