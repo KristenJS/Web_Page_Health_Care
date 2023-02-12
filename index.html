@@ -15,24 +15,23 @@
 <body>
 
 <div class="container">
-
   <div class="header">
     <div class="header-inner"> 
       <div class="header-logo"> <img src="./img/logo.png" alt=""></div>
-      <nav class="header-nav">
-        <a class="header-nav-link" href="#">Home</a>
-        <a class="header-nav-link" href="#">About</a>
-        <a class="header-nav-link" href="#">Services</a>
-        <a class="header-nav-link" href="#">Pricing</a>
-        <a class="header-nav-link" href="#">Contact</a>
-      </nav>
+        <nav class="header-nav">
+          <a class="header-nav-link" href="#home">Home</a>
+          <a class="header-nav-link" href="#about">About</a>
+          <a class="header-nav-link" href="#services">Services</a>
+          <a class="header-nav-link" href="#pricing">Pricing</a>
+          <a class="header-nav-link" href="#contact">Contact</a>
+        </nav>
     </div>
   </div>
   
     <div class="contentImg">
+      <a id="home" class="anchor"></a>
       <div class="contentTitle">
-        <div class="titleBig">Medical Experts</div>
-        <div class="titleBig">Health Care</div>
+        <div class="titleBig">Proffesional Developers Health Care</div>
         <div class="titlesmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum at animi harum eligendi eveniet facilis ipsum.</div>
         <br>
         <div class = 'buttons-icons'>
@@ -47,6 +46,7 @@
     </div>
        
     <div class="mainContent">
+      <a id="about" class="anchor"></a>
       <div class="contentBg"><img src="./img/tools.png" alt=""></div>
       <div class="contentAbout">
         <div class="titleAbout">About Clinic<br><span>Professional Care</span></div>
@@ -55,8 +55,9 @@
         <p><span>Diagnostics</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus accusantium repellat est atque aliquam laboriosam quod qui ullam earum molestias.</p> 
       </div>
     </div>
-    
+
     <div class="contentTwo">
+      <a id="services" class="anchor"></a>
       <div class="serviceTitle">How we can help you<br><span>Read more about our services</span></div>
       <div class="blockService">
         <div class="oneBlock">
@@ -122,6 +123,7 @@
     </div>
   
     <div class="pricingBlock">
+      <a id="pricing" class="anchor"></a>
       <div class="pricingTitle">Our Special Offers<br><span>Start to be healthy today</span></div>
       <!-- <img src="./img/pricing_bg.jpg" alt=""> -->
       <div class="pricingThreeBlocks">
@@ -169,15 +171,18 @@
 
 
     <div class="contactBlock">
+      <a id="contact" class="anchor"></a>
       <img src="./img/contact_image.jpg" alt="">
       <div class="form">
         <div class="contactTitle">Make An Appointmemt<br><span>And we will contact you</span></div>
-        <input type="text" placeholder="Full Name">
-        <input type="text" placeholder="Email">
-        <input type="text" placeholder="Phone">
-        <input type="text" placeholder="mm/dd/yyyy">
-        <input type="text" placeholder="Subject">
-        <button type="submit">Submit</button>
+        <form class="form_inputs" autocomplete="off">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Phone" required>
+          <input type="text" placeholder="mm/dd/yyyy" required>
+          <input type="text" placeholder="Subject" required>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
 
